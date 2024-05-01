@@ -9,9 +9,11 @@
     <button onclick="change_theme()">Change theme</button>
     <button onclick="change_text_size()">Change text size</button>
     <button onclick="change_position()">Change text position</button>
+    <button onclick="calculation()">Show min/avg/max</button>
     <table class="table">
-    {% for cpu in cpus %}
-        <p>Current CPU utilization: {{ cpu.curr_util }}</p>
-    {% endfor %}
+        <p id="demonstrate"></p>
+        {% for cpu in cpus %}
+            <p id="tala">Current CPU utilization: {{ cpu.curr_util }}</p>
+        {% endfor %}
     </table>
 </body>
