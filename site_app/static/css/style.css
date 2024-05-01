@@ -1,0 +1,15 @@
+body.dark-theme{
+    background-color: #171717;
+}
+
+body.dark-theme p{
+    color: #e5e5e5;
+}
+
+body.grand-size p{
+    font-size: 20px;
+}
+
+body.text-align-center p{
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    {% load static %}
+    <title>CPU</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <button onclick="change_theme()">Change theme</button>
+    <button onclick="change_text_size()">Change text size</button>
+    <button onclick="change_position()">Change text position</button>
+    <table class="table">
+    {% for cpu in cpus %}
+        <p>Current CPU utilization: {{ cpu.curr_util }}</p>
+    {% endfor %}
+    </table>
+</body>
