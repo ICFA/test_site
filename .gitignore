@@ -302,4 +302,4 @@ GitHub.sublime-settings
 # Ngrok and Django_migrations#
 Ngrok.exe
 desktop.ini
-*\migrations*
+*/migrations*
